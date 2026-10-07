@@ -1,0 +1,26 @@
+model_version: "1.0.0"          # bump on any change to method or parameters (see MAINTENANCE_LOG.md)
+study:
+  treated: UCAN
+  donors: [EMEA, LATAM, APAC]
+  event_quarter: "2022Q1"        # price change announced 2022-01-14
+  pre_start: "2018Q1"
+  post_quarters: 4               # 2022Q1-2022Q4; stops before paid sharing reached UCAN (May 2023)
+  arm_baseline_quarter: "2021Q4"
+  arm_post_quarters: ["2022Q2", "2022Q3", "2022Q4"]   # quarters with the new price fully rolled out
+  russia_exit: {region: EMEA, quarter: "2022Q1", members_m: 0.7}   # per Netflix Q1'22 letter
+finance:                         # ASSUMPTIONS, not Netflix disclosures. Change and re-run.
+  monthly_churn_baseline: 0.020  # third-party estimates put Netflix US churn near 2%/month
+  churn_sensitivity: [0.015, 0.020, 0.025, 0.035]
+  annual_discount_rate: 0.10
+  price_flow_through: 0.90       # share of incremental price revenue that reaches contribution
+  share_of_effect_from_churn: 1.0  # 1.0 = all lost members are extra cancellations (worst case for LTV)
+monitor:
+  train_quarters: 12
+  z_alert: 2.5
+  input_z_alert: 3.0
+  weight_l1_alert: 0.5
+  estimate_change_alert_pp: 0.25
+  stale_days: 135
+edgar:
+  cik: "0001065280"
+  user_agent: "pricing-study-monitor (set CONTACT_EMAIL secret)"

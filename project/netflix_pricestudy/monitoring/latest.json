@@ -1,0 +1,39 @@
+{
+ "latest_quarter": "2026Q2",
+ "input_z": {
+  "APAC": -1.5832857122530688,
+  "EMEA": -2.2997061707067967,
+  "LATAM": 1.3792528298268614,
+  "UCAN": 0.14109827125916544
+ },
+ "prediction": {
+  "quarter": "2026Q2",
+  "actual": 3.503214840813447,
+  "predicted": -0.8757821800539736,
+  "error": 4.378997020867421,
+  "rmse_loo": 2.3371984675948236,
+  "z": 1.873609400991,
+  "weights": {
+   "EMEA": 1.3500392326500403,
+   "LATAM": 0.0,
+   "APAC": 0.0
+  }
+ },
+ "running_z_4q": 0.4207806521799937,
+ "last4_z": [
+  -0.14609134049633782,
+  0.6611809039081279,
+  -1.5471376600428026,
+  1.873609400991
+ ],
+ "weight_l1_change": 0.8771392326500403,
+ "study_tau_change": 4.851524200433222e-07,
+ "days_since_quarter_end": 99,
+ "alerts": [
+  {
+   "type": "model_drift",
+   "severity": "medium",
+   "message": "monitor donor weights moved by 0.88 (L1) since the last run"
+  }
+ ]
+}

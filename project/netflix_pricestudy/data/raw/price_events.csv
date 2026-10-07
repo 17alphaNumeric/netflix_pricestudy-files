@@ -1,0 +1,9 @@
+event_id,region,announce_date,first_full_quarter,event_quarter,plan,old_price_usd,new_price_usd,source,verified_in_build
+ucan_2019,UCAN,2019-01-15,2019Q2,2019Q1,Basic,7.99,8.99,Press reports of Netflix US price change (Jan 2019),no - from author's notes; check before citing
+ucan_2019,UCAN,2019-01-15,2019Q2,2019Q1,Standard,10.99,12.99,Press reports of Netflix US price change (Jan 2019),no - from author's notes; check before citing
+ucan_2019,UCAN,2019-01-15,2019Q2,2019Q1,Premium,13.99,15.99,Press reports of Netflix US price change (Jan 2019),no - from author's notes; check before citing
+ucan_2020,UCAN,2020-10-29,2021Q1,2020Q4,Standard,12.99,13.99,Press reports of Netflix US price change (Oct 2020),no - from author's notes; check before citing
+ucan_2020,UCAN,2020-10-29,2021Q1,2020Q4,Premium,15.99,17.99,Press reports of Netflix US price change (Oct 2020),no - from author's notes; check before citing
+ucan_2022,UCAN,2022-01-14,2022Q2,2022Q1,Basic,8.99,9.99,https://techcrunch.com/2022/01/14/netflix-raised-its-prices-again/,yes
+ucan_2022,UCAN,2022-01-14,2022Q2,2022Q1,Standard,13.99,15.49,https://techcrunch.com/2022/01/14/netflix-raised-its-prices-again/,yes
+ucan_2022,UCAN,2022-01-14,2022Q2,2022Q1,Premium,17.99,19.99,https://techcrunch.com/2022/01/14/netflix-raised-its-prices-again/,yes
